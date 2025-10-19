@@ -14,4 +14,21 @@ def test_is_prime_edge_cases():
     assert is_prime(1) == False
     assert is_prime(2) == True
 
+#test for question b 
+from src.question_b import get_fahrenheit
+
+
+def test_get_fahrenheit_zero():
+    assert get_fahrenheit(0) == 32
+
+def test_get_fahrenheit_five():
+    assert get_fahrenheit(5) == 41
+
+def test_get_fahrenheit_ten():
+    assert get_fahrenheit(10) == 50
+
+# test for question c 
+
+
+
 
