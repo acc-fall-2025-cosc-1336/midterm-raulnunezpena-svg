@@ -29,6 +29,10 @@ def test_get_fahrenheit_ten():
 
 # test for question c 
 
+def test_use_local_variable():
+    num = 100
+    use_local_variable(num)
+    print(f"In test case after function call, num = {num}") 
 
 
 
