@@ -28,6 +28,7 @@ def test_get_fahrenheit_ten():
     assert get_fahrenheit(10) == 50
 
 # test for question c 
+from src.question_c.question_c import use_local_variable
 
 def test_use_local_variable():
     num = 100
@@ -35,6 +36,11 @@ def test_use_local_variable():
     print(f"In test case after function call, num = {num}") 
 
     # test for question d
+from src.question_d.get_miles_per_hour import get_miles_per_hour
+
+def test_get_miles_per_hour():
+    result = get_miles_per_hour(32, 60)
+    assert round(result, 6) == 19.883872
 
     
 
