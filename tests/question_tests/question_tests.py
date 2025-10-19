@@ -34,5 +34,9 @@ def test_use_local_variable():
     use_local_variable(num)
     print(f"In test case after function call, num = {num}") 
 
+    # test for question d
+
+    
+
 
 
