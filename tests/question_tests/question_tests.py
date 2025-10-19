@@ -1,12 +1,17 @@
-#write function tests here, don't add input('') statements here!
-import unittest
+from src.question_a.question_a import is_prime
 
-#follow this example to add questions b, c, and d for testing including their functions
-from src.question_a.question_a import test_config
+def test_is_prime_false():
+    assert is_prime(4) == False
 
-class Test_Config(unittest.TestCase):
+def test_is_prime_true_5():
+    assert is_prime(5) == True
 
-    def test_question_a_config(self):
-        self.assertEqual(True, test_config())
+def test_is_prime_true_11():
+    assert is_prime(11) == True
+
+def test_is_prime_edge_cases():
+    assert is_prime(0) == False
+    assert is_prime(1) == False
+    assert is_prime(2) == True
 
 
